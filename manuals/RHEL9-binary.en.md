@@ -7,7 +7,8 @@ If you want to set up a new Virtual Machine using Oracle EL9 in order to host yo
 * When installing Oracle EL9 in a virtual machine, please configure the virtual network adapter in 'bridge mode' to allow IPv6 to work. Often the default is called 'shared' which only provides IPv4 NAT.
 
 The RIPE NCC maintains binary RPM packages. These are currently available for RHEL9
-(x86_64). These have been verified to work on Oracle Linux Server 9.4 and Rocky Linux 9.2. 
+(x86_64). These have been verified to work on Oracle Linux Server 9.4, Rocky Linux 9.5
+and Red Hat Enterprise Linux 9.5.
 
 To add the repository to your system and install the package, follow these steps:
 
