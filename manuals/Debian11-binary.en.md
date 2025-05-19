@@ -14,25 +14,25 @@ To add the repository to your system and install the package, follow these steps
 1. Download the DEB that sets up the repository for the software probe DEB:
 
     ```
-    curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/debian/dists/bullseye/main/binary-amd64/ripe-atlas-repo_1.5-2_all.deb'
+    curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/debian/dists/bullseye/main/binary-amd64/ripe-atlas-repo_1.5-3_all.deb'
     ```
 
 2. Check the hash of the DEB:
 
     ```
-    sha256sum -b ripe-atlas-repo_1.5-2_all.deb
+    sha256sum -b ripe-atlas-repo_1.5-3_all.deb
     ```
 
     The hash should be:
 
     ```
-    519aa81ced15a13cae784396a7ece83d2866d42c4fdc8a29c78ef3cefaa8e03c
+    dbbf4e6e24a444ed6c4f67d552567dec91f8981bed6a0396ed30b639669f99af
     ```
 
 3. Install the DEB (with root privileges):
 
     ```
-    dpkg -i ripe-atlas-repo_1.5-2_all.deb
+    dpkg -i ripe-atlas-repo_1.5-3_all.deb
     ```
 
 4. Now you can install the package for the software probe itself (with root privileges):
@@ -44,16 +44,8 @@ To add the repository to your system and install the package, follow these steps
 
 5. Answer `'y'` that is ok to install the DEB.
 
-6. Now you can configure the RIPE Atlas software probe to be started at system boot time
-   using (with root privileges):
-    ```
-    systemctl enable ripe-atlas.service
-    ```
-7. To start the RIPE Atlas software probe, execute (with root privileges):
-    ```
-    systemctl start ripe-atlas.service
-    ```
-8. Starting the RIPE Atlas software probe for the first time generates a new SSH key pair to be used to
-   connect the probe to the RIPE Atlas infrastructure. You need to register
-   the public key part to in order to [register the probe](https://atlas.ripe.net/apply/swprobe/).
-   This can be found in `/etc/ripe-atlas/probe_key.pub`.
+6. At the end of the installation process, follow the on-screen instructions to register and start
+   up the probe.
+    * The registration process is also described here for reasons of clarity. You need
+    the public key part in order to [register the probe](https://atlas.ripe.net/apply/swprobe/). This process is
+    necessary in order for the probe to function. The public key can be found in `/etc/ripe-atlas/probe_key.pub`.
