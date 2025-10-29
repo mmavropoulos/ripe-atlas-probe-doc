@@ -1,13 +1,13 @@
 # Debian Linux 12: Binary DEB-specific Installation Instructions
 
-If you want to set up a new Virtual Machine using Debian 12 in order to host your probe:
+If you want to set up a new Virtual Machine using Debian 13 in order to host your probe:
 
-* Set up a new installation of Debian 12 (for example using [VirtualBox](https://www.virtualbox.org/) or [Parallels](https://www.parallels.com/)), please refer to the [Debian 12 installation guide](https://www.debian.org/releases/oldstable/installmanual).
+* Set up a new installation of Debian 13 (for example using [VirtualBox](https://www.virtualbox.org/) or [Parallels](https://www.parallels.com/)), please refer to the [Debian 13 installation guide](https://www.debian.org/releases/stable/installmanual).
 
-* When installing Debian 12 in a virtual machine, please configure the virtual network adapter in 'bridge mode' to allow IPv6 to work. Often the default is called 'shared' which only provides IPv4 NAT.
+* When installing Debian 13 in a virtual machine, please configure the virtual network adapter in 'bridge mode' to allow IPv6 to work. Often the default is called 'shared' which only provides IPv4 NAT.
 
-The RIPE NCC maintains binary DEB packages. These are currently available for Debian 12
-(x86_64 and arm64). These have been verified to work on Debian 12 (bookworm) for amd64 and Raspberry Pi OS for arm64.
+The RIPE NCC maintains binary DEB packages. These are currently available for Debian 13
+(x86_64 and arm64). These have been verified to work on Debian 13 (trixie) for amd64 and arm64.
 
 To add the repository to your system and install the package, follow these steps:
 
@@ -32,11 +32,11 @@ To add the repository to your system and install the package, follow these steps
 
     * amd64:
     ```
-    34b7afff1d31e12746e04a6760f3711a52c108f5c951e2dffa9fe699fc7777ca
+    45cddc7db55d6fcfd7ddf485a74859028db7541b03e7715dce5f36448eb02adf
     ```
     * arm64:
     ```
-    6ce0e4cb36c3fa8e5515304f241104128d7dac1e6a0e3ebd15324f7e9b5076f7
+    2c9d12e2c5ea9ee36659157cd636feba1872c0852c1be9aaf24345221c9f2552
     ```
 
 3. Install the DEB (with root privileges):
