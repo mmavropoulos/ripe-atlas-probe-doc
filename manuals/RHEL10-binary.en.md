@@ -1,4 +1,4 @@
-# Enterprise Linux 9: Binary RPM-specific Installation Instructions
+# Enterprise Linux 10: Binary RPM-specific Installation Instructions
 
 If you want to set up a new Virtual Machine using Oracle EL10 in order to host your probe:
 

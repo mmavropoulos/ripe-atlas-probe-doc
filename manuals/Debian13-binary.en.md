@@ -1,4 +1,4 @@
-# Debian Linux 12: Binary DEB-specific Installation Instructions
+# Debian Linux 13: Binary DEB-specific Installation Instructions
 
 If you want to set up a new Virtual Machine using Debian 13 in order to host your probe:
 
@@ -15,11 +15,11 @@ To add the repository to your system and install the package, follow these steps
     
     * amd64:
     ```
-    curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/debian/dists/bookworm/main/binary-amd64/ripe-atlas-repo_1.5-5_all.deb'
+    curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/debian/dists/trixie/main/binary-amd64/ripe-atlas-repo_1.5-5_all.deb'
     ```
     * arm64:
     ```
-    curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/debian/dists/bookworm/main/binary-arm64/ripe-atlas-repo_1.5-5_all.deb'
+    curl -O 'https://ftp.ripe.net/ripe/atlas/software-probe/debian/dists/trixie/main/binary-arm64/ripe-atlas-repo_1.5-5_all.deb'
     ```
     
 2. Check the hash of the DEB:
